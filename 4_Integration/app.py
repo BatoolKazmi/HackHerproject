@@ -14,6 +14,11 @@ prompts = []
 def chat():
     return render_template('chat.html', prompts=prompts)
 
+
+@app.route('/login', methods=('GET', 'POST'))
+def login():
+    return render_template('login.html', prompts=prompts)
+
 answers = ["Yes I love money.",
     "Spongebob is a sponge.",
     "You wanna help me make some crabby patties?",
