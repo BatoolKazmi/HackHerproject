@@ -8,8 +8,10 @@
 
 {% block content %}
   <div class="container">
-    <h1>Hello, world! You are on <strong>Index</strong>!</h1>
-    <a href="{{ url_for('chat') }}">Go to chat</a>
-    <a href="{{ url_for('login') }}">Go to login</a>
+    <main>
+      <h1>Hello, world! You are on <strong>Index</strong>!</h1>
+      <a href="{{ url_for('chat') }}">Go to chat</a>
+      <a href="{{ url_for('login') }}">Go to login</a>
+    </main>
   </div>
 {% endblock %}

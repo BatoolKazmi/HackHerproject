@@ -1,4 +1,4 @@
-/* @import url(reset.css); */
+ @import url(reset.css);
 
 :root {
   /** include the system-ui font family here **/
@@ -18,7 +18,72 @@
 }
 
 body {
-   background-color: tan;
+  background-color: var(--light-one-style);
+  min-height: 100vh;
+  color: var(--dark-one); 
+  
+   /* defined the rows and columns for our layout grid  */
+   grid-template-columns: 1fr 15em; /*all the space, fixed*/
+   grid-template-rows: 5em 1fr auto; /*fixed,fixed, all the space, based on content*/
+ 
+   /** define the necessary grid template areas for our layout **/
+   grid-template-areas:
+       "nav    nav"
+       "main   main"
+       "footer footer";
+  
+}
+
+nav {
+  grid-area: nav;
+  background-color: var(--light-four);
+
+  display: flex;
+  align-items: center;
+  border-bottom: var(--dark-one) 0.05em solid;
+  position: fixed; 
+  width: 100vw;
+}
+
+.fa-palette {
+  font-size: 1.5em;
+  margin-left: 1em;
+}
+
+nav ul{
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1em;
+}
+
+nav li {
+  margin: 1em 0.8em;
+  padding-left: 0.3em;
+  padding-top: 0.3em;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--dark-one);
+}
+
+nav a:hover {
+  color: var(--light-one);
+}
+/* Navigation styling ends */
+
+main {
+  grid-area: main;
+  background-color: var(--light-one);
+  display: grid;
+  grid-template-columns: 1fr 20fr 1fr;
+  justify-items: center;
+}
+
+footer {
+  grid-area: footer;
+  background-color: var(--light-three);
 }
 
 .container > h1 > strong {

@@ -25,8 +25,9 @@
   <nav>
     <i class="fa-solid fa-palette"></i>
     <ul>
-        <li><a href="http://127.0.0.1:5500/part1/index.html">About Me</a></li>
-        <li><a href="http://127.0.0.1:5500/part1/cv.html">Resume</a></li>
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('chat') }}">Chat</a></li>
+        <li><a href="{{ url_for('login') }}">Login</a></li>
     </ul>
   </nav>
     <div class="main">
