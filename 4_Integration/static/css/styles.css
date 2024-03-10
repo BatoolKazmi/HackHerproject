@@ -268,3 +268,130 @@ nav a:hover {
 #send-message button:hover {
   background-color: var(--dark-one);
 }
+/* Chatbox styles end */
+/* Login Styles */
+#second form {
+  padding: 3.5em 3.5em 2em 3.5em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center; 
+  background-color: var(--light-two);
+  border-radius: 1em; 
+  margin-bottom: 8em;
+}
+
+#second > h3 {
+  margin: 1em 24.5em 1em 0em;
+  align-self: center;
+  font-size: 1.5em;
+  font-weight: 800;
+  
+}
+
+#second > h2 {
+  align-self: flex-start;
+  font-family: "Inter", sans-serif;
+}
+
+#second form h3:last-of-type {
+  margin-top: 1em;
+}
+
+#second form h3:nth-last-of-type(2) {
+  margin-bottom: 1em;
+}
+
+#second form h3:first-of-type {
+  font-size: 2.5em;
+  font-weight: 800;
+  margin: 0.5em 0em 1.8em 0em;
+  font-family: "Newsreader", serif;
+  color: var(--dark-two);
+}
+
+#second div:nth-of-type(3) a {
+  font-size: 0.8em;
+  display: flex;
+  align-self: flex-end;
+  color: var(--dark-one);
+}
+
+#second div:nth-of-type(3) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#second form > a:last-of-type  {
+  margin-top: 1em;
+  font-size: 1.08em;
+  color: var(--dark-one);
+}
+
+
+#second form a:hover {
+  color: var(--dark-two);
+}
+
+#second input{
+  box-sizing: border-box;
+  width: 100%;
+  height: 2.76em;
+  background: white;
+  border: none;
+  outline: none;
+  border-bottom: 0.2em solid #ddd;
+  width: 100%;
+  margin-top: 0.5em;
+  padding-left: 2em;
+  font-family: "Inter", sans-serif;
+}
+
+#second div:first-of-type, #second div:nth-of-type(2){
+  width: 27em;
+  margin-top: 0.2em;
+}
+
+.fa-lock, .fa-user {
+  position: relative;
+  bottom: 2.2em;
+  left: 0.4em;
+  color:  #999;
+  font-size: 0.85em;
+}
+
+#second input::placeholder {
+  color: #bbb;
+}
+
+#second button {
+  font-size: 1.15em;
+  margin: 2em 0em 2.5em 0em;
+  background: var(--dark-two);
+  padding: 1em 0em;
+  width: 23.5em;
+  border-radius: 10em;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+#second input:focus + .fa-user, input:focus + .fa-lock{
+  color: var(--dark-two);
+}
+
+#second input:focus {
+  border-bottom: 0.1em solid #373d3f;
+  color: #373d3f;
+}
+
+#second a:hover {
+  color: var(--dark-two);
+}
+
+#second div:last-of-type{
+  display: flex;
+  flex-direction: column;
+}
+
