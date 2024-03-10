@@ -23,11 +23,14 @@
 </head>
 <body>
   <nav>
-    <img src="../static/img/logo_small.png" alt="" >
+    <div class="logo_time">
+      <img src="../static/img/smaller.jpg" alt="" >
+      <h1 class="logo">Haven</h1>
+    </div>
     <ul>
-        <li><a href="{{ url_for('index') }}">Home</a></li>
-        <li><a href="{{ url_for('chat') }}">Chat</a></li>
-        <li><a href="{{ url_for('login') }}">Login</a></li>
+        <li><a href="{{ url_for('index') }}">Who we are</a></li>
+        <li><a href="{{ url_for('login') }}">Sign-in</a></li>
+        <li><a href="{{ url_for('chat') }}" class="button">Chatbox</a></li>
     </ul>
   </nav>
     <div class="main">

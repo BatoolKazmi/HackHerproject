@@ -1,4 +1,5 @@
 @import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
 
 :root {
   /** include the system-ui font family here **/
@@ -6,19 +7,41 @@
 
   /* defining color properties */
   --light-one: #f4f1de;
-  --light-one-style: #EFEEEC;
-  --light-two: #f2cc8f;
+  --light-two: #EFEEEC;
   --light-three: #CDD6E0;;
   --light-four: #e0cdcd;
 
   --dark-one: #3d405b;
-  --dark-two: #81B29A;
-  --dark-three: #e07a5f;
-  --dark-four: #A3683E;
+  --dark-two: #426B1F;
+}
+
+.logo {
+  font-family: "Newsreader", serif;
+  color: var(--dark-two);
+  font-weight: 400;
+  position: relative;
+  top: 0.3em;
+}
+
+.logo_time {
+  display: flex;
+  align-items: center;
+  margin: 1em;
+}
+
+.button {
+  padding: 1em;
+  border-radius: 0.5em;
+  background-color: var(--dark-two);
+  color: var(--light-two);
+}
+
+.button:hover {
+  color: var(--light-one);
 }
 
 body {
-  background-color: var(--light-one-style);
+  background-color: var(--light-two);
   min-height: 100vh;
   color: var(--dark-one); 
   
@@ -36,7 +59,7 @@ body {
 
 nav {
   grid-area: nav;
-  background-color: var(--light-four);
+  background-color: var(--light-two);
 
   display: flex;
   align-items: center;
@@ -68,13 +91,13 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--light-one);
+  color: var(--dark-two);
 }
 /* Navigation styling ends */
 
 main {
   grid-area: main;
-  background-color: var(--light-one);
+  background-color: var(--light-two);
   display: grid;
   grid-template-columns: 1fr 20fr 1fr;
   justify-items: center;
@@ -85,6 +108,15 @@ footer {
   background-color: var(--light-three);
 }
 
+button {
+
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 1.3em;
+}
+/* Other Styling */
 .container > h1 > strong {
   color: darkgreen;
 } 
