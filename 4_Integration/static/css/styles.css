@@ -133,53 +133,50 @@ nav a:hover {
 .first img {
   margin: 1em;
 }
+/* Index styles stop */
+
+/* Chatbox Styles */
+.second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 
-footer {
-  grid-area: footer;
-  background-color: var(--light-three);
+.second h1 {
+  align-items: center;
+  margin: 1em;
+  border-bottom: var(--dark-one) 0.05em solid;
+  padding-bottom: 0.2em;
+}
+
+.second .tex {
+  width: 100vw;
+}
+
+.second strong {
+  color: var(--dark-two);
+}
+
+.textbox {
+  background-color: var(--light-one);
+  color: var(--dark-one);
 }
 
 /* Other Styling */
-.container > h1 > strong {
-  color: darkgreen;
-} 
 
-.container > a {
-  color: white;
-  background-color: black;
-
-  border-radius: 4px;
-  padding: 10px 12px;
-
-  transition-duration: 0.5s;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.container > a:hover {
-  color: black;
-  background-color: white;
-
-  transition-duration: 0.5s;
-}
-
+/* Text bubble */
 .text-bubble {
-  margin-bottom: 20px;
+  margin-bottom: 1em;
 
-  opacity: 75%;
-  cursor: pointer;
-}
-
-.text-bubble:hover {
   opacity: 100%;
 }
 
-.text-bubble-center {
+/* .text-bubble-center {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 .text-bubble-right {
   text-align: right;
@@ -204,22 +201,21 @@ footer {
 .text-bubble-txt {
   background-color: white;
   border-radius: 8px;
-  border-style: solid;
 
   border-bottom-width: 2px;
 
   padding-left: 10px;
   padding-right: 10px;
 
-  font-size: 20px;
+  font-size: 1em;
 }
 
 .text-bubble-left > .text-bubble-txt {
-  max-width: 75%;
+  max-width: 100%;
 }
 
 .text-bubble-right > .text-bubble-txt {
-  max-width: 75%;
+  max-width: 100%;
 }
 
 .text-bubble-txt > p:nth-child(1) {
@@ -246,7 +242,29 @@ footer {
 
 #send-message {
   position: absolute;
-  top: 10px;
+  display: flex;
   left: 50%;
+  flex-direction: column;
   transform: translateX(-50%);
+  border: var(--dark-one) 0.05em solid;
+  border-radius: 0.05em;
+  padding: 1em;
+  margin: 1em;
 } 
+
+#send-message textarea {
+  width: 50vw; /* Set the width to 50% of the viewport width */
+  box-sizing: border-box;
+}
+
+#send-message button {
+  background-color: var(--dark-two);
+  color: var(--light-two);
+  border-radius: 0.5em;
+  margin: 1em;
+  padding: 1em;
+}
+
+#send-message button:hover {
+  background-color: var(--dark-one);
+}

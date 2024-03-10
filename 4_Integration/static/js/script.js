@@ -48,7 +48,7 @@ function sendMessage() {
   postMessage(msg, "Me", -1, "right", "textspace");
   textSpace.scrollTop = textSpace.scrollHeight;
 
-  var roleplaying = "Will Smith";
+  var roleplaying = "You";
   var url = "/get_response?" + new URLSearchParams({roleplaying, msg})
   fetch(url, {
     "method": "GET"
@@ -56,7 +56,7 @@ function sendMessage() {
   .then(response => response.json())
   .then(data => {
     console.log(data.json);
-    var elm = postMessage(data, "Mr. Krabs", -1, "left", "textspace");
+    var elm = postMessage(data, "Amy", -1, "left", "textspace");
     textToSpeech(elm);
     textSpace.scrollTop = textSpace.scrollHeight;
   });
