@@ -171,8 +171,6 @@ nav .button:hover {
 
 /* Text bubble */
 .text-bubble {
-  margin-bottom: 1em;
-
   opacity: 100%;
 }
 
@@ -183,6 +181,7 @@ nav .button:hover {
 } */
 
 .text-bubble-right {
+  margin-top: 2em;
   text-align: right;
 }
 
