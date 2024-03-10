@@ -55,7 +55,7 @@ h1 {
 }
 
 .button:hover, button:hover {
-  color: var(--light-one);
+  background-color: var(--dark-one);
   text-decoration: none;
 }
 
@@ -105,6 +105,11 @@ nav a {
 
 nav a:hover {
   color: var(--dark-two);
+}
+
+nav .button:hover {
+  background-color: var(--dark-one);
+  color: var(--light-two);
 }
 /* Navigation styling ends */
 
@@ -323,10 +328,6 @@ nav a:hover {
 }
 
 
-#second form a:hover {
-  color: var(--dark-two);
-}
-
 #second input{
   box-sizing: border-box;
   width: 100%;
@@ -372,6 +373,10 @@ nav a:hover {
   text-decoration: none;
 }
 
+#second a:last-of-type:hover {
+  background-color: var(--dark-one);
+}
+
 .Forgot {
   color: var(--dark-one);
 }
@@ -385,7 +390,7 @@ nav a:hover {
   color: #373d3f;
 }
 
-#second a:hover {
+#second .Forgot:hover  {
   color: var(--dark-two);
 }
 
