@@ -1,5 +1,7 @@
 @import url(reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=NTR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=NTR&display=swap');
 
 :root {
   /** include the system-ui font family here **/
@@ -15,12 +17,26 @@
   --dark-two: #426B1F;
 }
 
+a, p {
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  margin: 1em;
+  font-size: 1.5em;
+}
+
+h1 {
+  font-size: 2em;
+}
+
 .logo {
   font-family: "Newsreader", serif;
   color: var(--dark-two);
   font-weight: 400;
   position: relative;
   top: 0.3em;
+  padding-left: 0.3em;
 }
 
 .logo_time {
@@ -34,10 +50,13 @@
   border-radius: 0.5em;
   background-color: var(--dark-two);
   color: var(--light-two);
+  font-style: none;
+  text-decoration: none;
 }
 
-.button:hover {
+.button:hover, button:hover {
   color: var(--light-one);
+  text-decoration: none;
 }
 
 body {
@@ -67,11 +86,6 @@ nav {
   width: 100vw;
 }
 
-.fa-palette {
-  font-size: 1.5em;
-  margin-left: 1em;
-}
-
 nav ul{
   width: 100vw;
   display: flex;
@@ -95,27 +109,37 @@ nav a:hover {
 }
 /* Navigation styling ends */
 
-main {
+/* Index Container */
+.first {
   grid-area: main;
   background-color: var(--light-two);
-  display: grid;
-  grid-template-columns: 1fr 20fr 1fr;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em;
 }
+
+.first h1 {
+  font-family: "NTR", sans-serif;
+  font-weight: 600;
+  font-size: 3em;
+  margin: 0.5em;
+}
+
+.first .button {
+  margin: 1em;
+}
+
+.first img {
+  margin: 1em;
+}
+
 
 footer {
   grid-area: footer;
   background-color: var(--light-three);
 }
 
-button {
-
-}
-
-h1 {
-  font-weight: 600;
-  font-size: 1.3em;
-}
 /* Other Styling */
 .container > h1 > strong {
   color: darkgreen;

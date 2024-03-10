@@ -8,14 +8,16 @@
 
 {% block content %}
   <div class="container">
-    <main>
-      <h1>
-        Report hate crimes, harassment,
-          and other attacks.</h1>
-        <button>Chat with chatbot</button>
+    
+      <section class="first">
+        <h1>
+          Report hate crimes, harassment,
+            and other attacks.
+        </h1>
+        <a href="{{ url_for('chat') }}" class="button">Chatbox</a>
         <img src="https://images.pexels.com/photos/4016610/pexels-photo-4016610.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Man on a couch" width="500" height="600">
         <p>Have you experienced a hate crime or harassment?</p>
         <p>We’re here to help you find the support you need. Chat with <strong>Amy</strong> and find local mental health resources, support groups, and/or file a police report.</p>
-    </main>
+      </section>
   </div>
 {% endblock %}
