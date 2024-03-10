@@ -1,4 +1,4 @@
- @import url(reset.css);
+@import url(reset.css);
 
 :root {
   /** include the system-ui font family here **/
@@ -41,7 +41,6 @@ nav {
   display: flex;
   align-items: center;
   border-bottom: var(--dark-one) 0.05em solid;
-  position: fixed; 
   width: 100vw;
 }
 
@@ -88,7 +87,7 @@ footer {
 
 .container > h1 > strong {
   color: darkgreen;
-}
+} 
 
 .container > a {
   color: white;
@@ -194,4 +193,4 @@ footer {
   top: 10px;
   left: 50%;
   transform: translateX(-50%);
-}
+} 
