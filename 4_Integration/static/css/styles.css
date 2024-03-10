@@ -22,7 +22,7 @@ a, p {
 }
 
 p {
-  margin: 1em;
+  margin: 1em 5em;
   font-size: 1.5em;
 }
 
@@ -83,7 +83,6 @@ nav {
   display: flex;
   align-items: center;
   border-bottom: var(--dark-one) 0.05em solid;
-  width: 100vw;
 }
 
 nav ul{
@@ -310,12 +309,6 @@ nav a:hover {
   color: var(--dark-two);
 }
 
-#second div:nth-of-type(3) a {
-  font-size: 0.8em;
-  display: flex;
-  align-self: flex-end;
-  color: var(--dark-one);
-}
 
 #second div:nth-of-type(3) {
   display: flex;
@@ -345,7 +338,6 @@ nav a:hover {
   width: 100%;
   margin-top: 0.5em;
   padding-left: 2em;
-  font-family: "Inter", sans-serif;
 }
 
 #second div:first-of-type, #second div:nth-of-type(2){
@@ -365,16 +357,23 @@ nav a:hover {
   color: #bbb;
 }
 
-#second button {
+#second a:last-of-type {
   font-size: 1.15em;
+  display: flex;
   margin: 2em 0em 2.5em 0em;
   background: var(--dark-two);
-  padding: 1em 0em;
+  padding: 1em;
   width: 23.5em;
   border-radius: 10em;
   border: none;
   color: white;
   text-transform: uppercase;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.Forgot {
+  color: var(--dark-one);
 }
 
 #second input:focus + .fa-user, input:focus + .fa-lock{

@@ -13,9 +13,13 @@ prompts = []
 def chat():
     return render_template('chat.html', prompts=prompts)
 
-@app.route('/login', methods=('GET', 'POST'))
+@app.route('/sign-up', methods=('GET', 'POST'))
 def login():
     return render_template('login.html', prompts=prompts)
+
+@app.route('/about', methods=('GET', 'POST'))
+def about():
+    return render_template('about.html', prompts=prompts)
 
 def get_specific_response(prompt):
     if "money" in prompt.lower():
