@@ -172,6 +172,7 @@ nav .button:hover {
 /* Text bubble */
 .text-bubble {
   opacity: 100%;
+  margin-top: 0.5em;
 }
 
 /* .text-bubble-center {
